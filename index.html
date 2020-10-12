@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algo. Visualizer</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="all-wrapper">
+    <header>
+        <div class="header-logo">
+            <p>SORITNG ALGORITHM VISUALIZER</p>
+        </div>
+        <nav>
+            <div class="head">
+                <div class="array-data hold">
+                <p class="array-data">Size of Array:</p>
+                <input class="array-data" id="arr-size" type="range" min=20 max=80 step=1 value=30>
+                <p class="array-data">Set the Speed:</p>
+                <input class="array-data" id="arr-speed" type="range" min=1 max=5 step=1 value=3>
+                </div>
+                <button class="submit-button" id="arr-generate">Create New Array</button>
+            </div>
+            <div class="head algo">
+                <button>Bubble</button>
+                <button>Insertion</button>
+                <button>Merge</button>
+                <button>Quick</button>
+                <button>Selection</button>
+                <button>Heap</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="array-cont">
+        <div class="left-pad"></div>
+        <div id="array-container">
+        </div>
+        <div class="right-pad"></div>
+
+    </section>
+</div>
+    <div class="footer">
+            <div class="footer-section black"><p>Not In Use</p></div>
+            <div class="footer-section green"><p>Sorted</p></div>
+            <div class="footer-section yellow"><p>Currently In Use</p></div>
+            <div class="footer-section red"><p>Changed</p></div>      
+    <div>
+
+    <script src="./scripts/main.js"></script>
+    <script src="scripts/visualize.js"></script>
+    <script src="scripts/bubble.js"></script>
+    <script src="scripts/insertion.js"></script>
+    <script src="scripts/quick.js"></script>
+    <script src="scripts/merge.js"></script>
+    <script src="scripts/selection.js"></script>
+    <script src="scripts/heap.js"></script>
+</body>
+
+</html>
